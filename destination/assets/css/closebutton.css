@@ -1,0 +1,50 @@
+.x {
+  position: absolute;
+  z-index: 105;
+  top: -8px;
+  left: -8px;
+  width: 28px;
+  height: 28px;
+  background-color: #ff5248;
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+.x::before, .x::after {
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  width: 12px;
+  height: 3\px;
+  content: "";
+  background-color: white;
+}
+
+.x::before {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.x::after {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.x:hover {
+  cursor: pointer;
+}
+
+.x:hover::before, .x:hover::after {
+  display: block;
+}
+
+.droppedblock:hover .x {
+  visibility: visible;
+}
+
+.weekday {
+  background-color: white!important;
+}
+

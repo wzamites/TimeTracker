@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html class="text-center" style="/*max-width: 985px;*/">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>draggernointeract2.1</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="assets/css/resizable.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/closebutton.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+</head>
+
+<body class="text-center" id="body" style="background-color: rgb(250, 250, 250);">
+    <div id="navbar">
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+            <div class="container"><a class="navbar-brand text-danger" href="#">&nbsp;<img src="assets/img/sig-color-wbg.gif" style="width: 250px;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav mr-auto"></ul><span class="navbar-text actions"> <a href="#" class="login">Welcome, Leonardo Dicaprio.</a><a class="btn btn-light action-button" role="button" href="#">Sign Out</a></span></div>
+    </div>
+    </nav>
+    </div>
+    <div class="row" id="load-columns">
+        <div class="col" id="projectcolumn">
+            <div class="row projecttitlerow">
+                <div class="col"><input type="text" id="search-field" name="search..." placeholder="Search"></div>
+            </div>
+            <div id="engagementcontain" class="scrolling">
+                <div class="project-row">
+                    <div id="generalproject" class="projectblock selected generalproject">
+                        <p class="text-black-50 projecttext">General</p>
+                    </div>
+                </div>
+                <div class="project-row">
+                    <div id="proj1" class="projectblock middleproj">
+                        <p class="text-black-50 projecttext">Interal Project 1</p>
+                    </div>
+                </div>
+                <div class="project-row">
+                    <div id="proj2" class="projectblock middleproj">
+                        <p class="text-black-50 projecttext">Interal Project 2</p>
+                    </div>
+                </div>
+                <div class="project-row">
+                    <div id="proj3" class="projectblock middleproj">
+                        <p class="text-black-50 projecttext">Engagement A</p>
+                    </div>
+                </div>
+                <div class="project-row">
+                    <div id="proj4" class="projectblock middleproj">
+                        <p class="text-black-50 projecttext">Engagement B</p>
+                    </div>
+                </div>
+                <div class="project-row">
+                    <div id="proj5" class="projectblock middleproj">
+                        <p class="text-black-50 projecttext">Engagement C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col" id="taskscolumn">
+            <div id="firefoxscrollcontainer" class="scrolling">
+                <div id="generalcontainer" class="taskscontainer generalproject taskshover">
+                    <p class="titletext" style="opacity: 0.33;">General</p>
+                    <div class="block internal-epic" style="width: 768px;">
+                        <p class="epictext">PTO Vacation</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block internal-epic" style="width: 768px;">
+                        <p class="epictext">Sick Time</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block internal-epic" style="width: 768px;">
+                        <p class="epictext">Public Holiday</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block internal-epic" style="width: 768px;">
+                        <p class="epictext">Bereavement</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block internal-epic" style="width: 768px;">
+                        <p class="epictext">Jury Duty</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block internal-epic" style="width: 768px;">
+                        <p class="epictext">Training</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block internal-epic" style="width: 96px;">
+                        <p class="epictext">Lunch</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block internal-epic" style="width: 96px;">
+                        <p class="epictext">Internal Meeting</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block internal-epic" style="width: 288px;">
+                        <p class="epictext">Hub Party</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block internal-epic" style="width: 144px;">
+                        <p class="epictext paragraph">IM Weekly Meeting</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block internal-epic" style="width: 192px;">
+                        <p class="epictext paragraph">OCI Exam</p>
+                        <div class="x"></div>
+                    </div>
+                </div>
+                <div id="proj1container" class="taskscontainer">
+                    <p class="titletext">Internal Project 1</p>
+                    <div class="block project1" style="width: 96px;">
+                        <p class="epictext">Internal Meeting</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block project1" style="width: 96px;">
+                        <p class="epictext">Create Manuscript</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block project1" style="width: 192px;">
+                        <p class="epictext">Make Slides</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block project1" style="width: 96px;">
+                        <p class="epictext">Prepare Demo</p>
+                        <div class="x"></div>
+                    </div>
+                </div>
+                <div id="proj2container" class="taskscontainer">
+                    <p class="titletext">Internal Project 2</p>
+                    <div class="block project2" style="width: 96px;">
+                        <p class="epictext">Discovery Call</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block project2" style="width: 96px;">
+                        <p class="epictext">Internal Meeting</p>
+                        <div class="x"></div>
+                    </div>
+                </div>
+                <div id="proj3container" class="taskscontainer">
+                    <p class="titletext">Engagement A</p>
+                    <div class="block engagementa" style="width: 96px;">
+                        <p class="epictext">Discovery Call</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block engagementa" style="width: 96px;">
+                        <p class="epictext">Prototyping</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block engagementa" style="width: 96px;">
+                        <p class="epictext">POC</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block engagementa" style="width: 96px;">
+                        <p class="epictext">Customer Demo</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block engagementa" style="width: 96px;">
+                        <p class="epictext">Internal Meeting</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block engagementa" style="width: 96px;">
+                        <p class="epictext">PPT Presentation</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block engagementa" style="width: 144px;">
+                        <p class="epictext">Conference</p>
+                        <div class="x"></div>
+                    </div>
+                </div>
+                <div id="proj4container" class="taskscontainer">
+                    <p class="titletext">Engagement B</p>
+                    <div class="block engagementb" style="width: 96px;">
+                        <p class="epictext">Discovery Call</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block engagementb" style="width: 144px;">
+                        <p class="epictext">Conference</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block engagementb" style="width: 144px;">
+                        <p class="epictext">Conference</p>
+                        <div class="x"></div>
+                    </div>
+                </div>
+                <div id="proj5container" class="taskscontainer">
+                    <p class="titletext">Engagement C</p>
+                    <div class="block engagementc" style="width: 96px;">
+                        <p class="epictext">Discovery Call</p>
+                        <div class="x"></div>
+                    </div>
+                    <div class="block engagementc" style="width: 144px;">
+                        <p class="epictext">Conference</p>
+                        <div class="x"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container dropzone" id="calendar">
+        <div id="calendar-contain">
+            <div class="row day-row">
+                <div class="col day-column">
+                    <h4 class="text-right day-of-week">Sun, 27</h4>
+                </div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+            </div>
+            <div class="row day-row">
+                <div class="col day-column">
+                    <h4 class="text-right day-of-week">Mon, 28</h4>
+                </div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+            </div>
+            <div class="row day-row">
+                <div class="col day-column">
+                    <h4 class="text-right day-of-week">Tue, 29</h4>
+                </div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+            </div>
+            <div class="row day-row">
+                <div class="col day-column">
+                    <h4 class="text-right day-of-week">Wed, 30</h4>
+                </div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+            </div>
+            <div class="row day-row">
+                <div class="col day-column">
+                    <h4 class="text-right day-of-week">Thu, 31</h4>
+                </div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+            </div>
+            <div class="row day-row">
+                <div class="col day-column">
+                    <h4 class="text-right day-of-week">Fri, 1</h4>
+                </div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+            </div>
+            <div class="row day-row">
+                <div class="col day-column">
+                    <h4 class="text-right day-of-week">Sat 2</h4>
+                </div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+                <div class="col time-column"></div>
+            </div>
+            <div class="row day-row">
+                <div class="col day-column"></div>
+                <div class="col time-column last-column">
+                    <p class="text-left time">8 AM</p>
+                </div>
+                <div class="col time-column last-column">
+                    <p class="text-left time">9 AM</p>
+                </div>
+                <div class="col time-column last-column">
+                    <p class="text-left time">10 AM</p>
+                </div>
+                <div class="col time-column last-column">
+                    <p class="text-left time">11 AM</p>
+                </div>
+                <div class="col time-column last-column">
+                    <p class="text-left time">12 PM</p>
+                </div>
+                <div class="col time-column last-column">
+                    <p class="text-left time">1 PM</p>
+                </div>
+                <div class="col time-column last-column">
+                    <p class="text-left time">2 PM</p>
+                </div>
+                <div class="col time-column last-column">
+                    <p class="text-left time">3 PM</p>
+                </div>
+                <div class="col time-column last-column">
+                    <p class="text-left time">4 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="shadow calendardrop">
+            <div class="row time-row"></div>
+            <div class="row time-row"></div>
+            <div class="row time-row"></div>
+            <div class="row time-row"></div>
+            <div class="row time-row"></div>
+            <div class="row time-row"></div>
+            <div class="row time-row"></div>
+            <div class="statistics"></div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery-collision.min.js"></script>
+    <script src="assets/js/moment.lib.js"></script>
+    <script src="assets/js/drag-function.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/selectproject.js"></script>
+    <script src="assets/js/untitled.js"></script>
+</body>
+
+</html>
