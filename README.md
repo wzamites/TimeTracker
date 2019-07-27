@@ -1,6 +1,6 @@
 # TimeTracker
 A drag and drop time-tracking app
 
-Statis prototype is hosted here:
+Static prototype is hosted here:
 https://wzamites.github.io/TimeTracker/
-Simily drag the blocks onto the calendar.
+Simply drag the blocks onto the calendar and resize them to fit the time worked.
